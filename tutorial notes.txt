@@ -6,6 +6,9 @@ function definition is
     def message_box(subject, content):
         pass
 
+you need the indented block, default to pass, or it won't let you do anything until it sees one
+
+
 and if statements don't use && ||
 
     if (((ball.xcor() > 340) and (ball.xcor() < 350)) and ((ball.ycor() > (paddle_b.ycor()-50)) and (ball.ycor() < (paddle_b.ycor()+50)))):
@@ -14,4 +17,42 @@ and if statements don't use && ||
 Which I'm not that big a fan of.
 
 You also don't have to declare types on variables, which still bothers me conceptually.
+---
 
+Virtual environments
+!! most important commands for venv !! (go into bash first)
+Navigate to a dedicated directory for virtual environments
+>virtualenv projectenv
+>source projectenv/bin/activate
+
+!!to stay in fish, run this one!!
+╭─eein@CYBERDRAGON in ~/Documents/Lab/Code/Python Stuffs via  v3.9.5 
+╰─λ source "/home/eein/Documents/Lab/Code/Python Stuffs/env_1/bin/activate.fish"
+
+source "/home/eein/Documents/Lab/Code/Python Stuffs/env_2_snake/bin/activate.fish"
+
+This Activates the Virtual Environment. the name should be an indicator
+(project2_env) [eein@CYBERDRAGON Environments]$
+
+>which python
+>which pip
+
+Note:
+Be Careful When rearranging files and folders wrt virual environments.
+the >source commands requires a location and you'll have to update that too.
+
+
+Note:
+Any package you add to a virtual environment should first be added to your true python installation.
+
+Otherwise the VSCode run command won't work it
+Truthfully, you can't run a python script in the venv without running 
+>python -u "file.py"
+
+While the terminal is inside the venv
+Or at least that's what I'm gathering
+
+
+---
+
+PyLint is annoying. Disable it by CTRL SHIFT P, Python:Enable Linting, off
