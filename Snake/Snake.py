@@ -47,4 +47,18 @@ def message_box(subject, content):
     pass
 
 def main():
+    #Set up Pygame window
+    width  = 500
+    height = 500
+    rows   = 20
+    win = pygame.display.set_mode((width, height))
+
     pass
+
+
+
+
+cube.rows = rows
+cube.w = w
+
+main()
