@@ -35,15 +35,8 @@ class snake(object):
         pass
 
 def drawGrid(w, rows, surface):
-    sizeBtwn = w // rows
+    pass
 
-    x = 0
-    y = 0
-    for i in range(rows):
-        x = x+sizeBtwn
-        y = y+sizeBtwn
-        pygame.draw.line(surface, (255,255,255), (x,0),(x,w))
-        pygame.draw.line(surface, (255,255,255), (0,y),(w,y))
     
 def redrawWindow(surface):
     global rows, width
@@ -65,7 +58,7 @@ def main():
     height = 500
     rows   = 20
     win = pygame.display.set_mode((width, height))
-    s = snake((255,0,0), (10,10))
+    #s = snake((255,0,0), (10,10))
 
     clock = pygame.time.Clock() 
 
