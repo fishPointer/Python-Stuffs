@@ -1,0 +1,17 @@
+Python is different from C
+Spacing is important, but no semicolons ;
+
+function definition is 
+
+    def message_box(subject, content):
+        pass
+
+and if statements don't use && ||
+
+    if (((ball.xcor() > 340) and (ball.xcor() < 350)) and ((ball.ycor() > (paddle_b.ycor()-50)) and (ball.ycor() < (paddle_b.ycor()+50)))):
+            ball.dx *= -1
+
+Which I'm not that big a fan of.
+
+You also don't have to declare types on variables, which still bothers me conceptually.
+
