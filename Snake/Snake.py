@@ -58,7 +58,7 @@ def main():
 
 
 
-cube.rows = rows
-cube.w = w
+#cube.rows = rows
+#cube.w = w
 
 main()
