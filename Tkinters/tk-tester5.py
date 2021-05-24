@@ -14,6 +14,7 @@ root.call('wm', 'iconphoto', root._w, img)
 
 
 my_img = ImageTk.PhotoImage(Image.open('/home/eein/Documents/Lab/Code/Python Stuffs/Tkinters/fsl.png'))
+
 my_label = Label(image=my_img)
 my_label.pack()
 
