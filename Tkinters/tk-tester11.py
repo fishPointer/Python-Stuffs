@@ -17,6 +17,5 @@ def open():
     imgglbl = Label(image=imgg).pack()
 
 
-btn = Button(root, text="Open a girl", command=open).pack()
-
+root.title('Breadbox GUI')
 root.mainloop()
