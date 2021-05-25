@@ -20,6 +20,9 @@ def megaoff():
 
 def megaon():
     client.publish("/corn/color/relay", "0")
+
+def phoneping():
+    client.publish("/phone/ping", "1")
     
 
 client = mqtt.Client()
@@ -35,6 +38,7 @@ btn = Button(root, text="Connect to MQTT", command=client.loop_start).pack()
 btn2 = Button(root, text="MegaLights OFF", command=megaoff).pack()
 btn3 = Button(root, text="MegaLights ON", command=megaon).pack()
 btn4 = Button(root, text="Exit Program", command=root.quit).pack()
+btn5 = Button(root, text="Ping Phone", command=phoneping).pack()
 
 lbl2 = Label(root, font=('calibri', 16, 'bold'))
 lbl2.pack(anchor='center')
